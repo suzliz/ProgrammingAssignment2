@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This function creates a vector that is a list containing a
+## function to set or get the value of a vector and set or get
+## the inverse of a matrix.
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -17,7 +17,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve calculates the inverse of a matrix created with the
+## makeCacheMatrix function. If first checks to see if the inverse
+## has been calculated, If so it gets the inverse from the cache 
+## (using getinv) ands skips the computation. If not, it calculates 
+## the inverse and sets the value of the inverse (using setinv).
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
